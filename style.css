@@ -68,8 +68,38 @@ header {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 3;
+  padding: 20px 40px;
+  white-space: nowrap;
 }
 
 .header-top {
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 20px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-top-search-bar {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-top-search-bar input {
+  background-color: #E2E8F0;
+  border-radius: 9999px;
+  border: none;
+  height: 30px;
+  width: min(100%, 600px);
+  min-width: 100px;
+}
+
+.header-top-alarm {
+  /* margin: 0 20px; */
+}
+
+.header-top-profile {
+  display: grid;
+  grid-template-columns: 20px 1fr;
 }
