@@ -16,6 +16,7 @@ aside {
   color: white;
   padding: 20px;
   font-weight: bold;
+  z-index: 5;
 }
 
 
@@ -29,8 +30,13 @@ aside {
 }
 
 .sidebar-main {
-  display: grid;
   margin-bottom: 30px;
+}
+
+.sidebar-main,
+.sidebar-bottom
+{
+  display: grid;
 }
 
 .sidebar-main-content,
@@ -39,6 +45,7 @@ aside {
   display: grid;
   grid-template-columns: 30px 150px;
   gap: 10px;
+  align-items: center;
   margin: 10px 0;
 }
 
@@ -54,4 +61,15 @@ aside {
 .sidebar-bottom-content-icon
 {
   filter: invert(1) brightness(2);
+}
+
+header {
+  display: grid;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 3;
+}
+
+.header-top {
+  display: flex;
 }
