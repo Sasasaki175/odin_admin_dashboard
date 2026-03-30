@@ -68,15 +68,16 @@ header {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 3;
-  padding: 20px 40px;
+  padding: 10px 40px;
   white-space: nowrap;
+  gap: 28px;
 }
 
 .header-top {
   display: grid;
-  grid-template-columns: 3fr 20px 1fr;
+  grid-template-columns: 1fr 20px 190px;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .header-top-search-bar {
@@ -90,8 +91,8 @@ header {
   background-color: #E2E8F0;
   border-radius: 9999px;
   border: none;
-  height: 30px;
-  width: min(100%, 600px);
+  height: 28px;
+  width: min(100%, 500px);
   min-width: 100px;
 }
 
@@ -100,6 +101,58 @@ header {
 }
 
 .header-top-profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.header-top-profile-img {
+  width: 40px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.header-bottom {
   display: grid;
-  grid-template-columns: 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.header-bottom-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.header-bottom-profile span {
+  font-size: 0.7rem;
+}
+
+.header-bottom-profile address {
+  font-size: 1.1rem;
+  font-style: normal;
+}
+
+.header-bottom-profile-img {
+  width: 60px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.header-bottom-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-bottom-buttons button {
+  color: white;
+  background-color: #1992D4;
+  border: none;
+  border-radius: 9999px;
+  padding: 9px 27px;
+  margin: 0 15px;
 }
