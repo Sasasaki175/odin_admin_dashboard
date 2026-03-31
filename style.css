@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-style: normal;
 }
 
 .container {
@@ -94,6 +95,7 @@ header {
   height: 28px;
   width: min(100%, 500px);
   min-width: 100px;
+  padding-left: 12px;
 }
 
 .header-top-alarm {
@@ -257,6 +259,46 @@ header {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background-color: white;
   border-radius: 8px;
-  padding: 35px;
+  padding: 25px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  gap: 20px;
 }
+
+.main-content-trending-container .trend {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.main-content-trending-container .trend address {
+  font-weight: bold;
+}
+
+.main-content-trending-container .trend span {
+  opacity: 0.8;
+}
+
+.main-content-trending-container .trend-icon {
+  width: 60px;
+  border-radius: 9999px;
+  padding: 3px;
+}
+
+#tegan-icon {
+  background-color: azure;
+}
+
+#morgan-icon {
+  background-color: yellow;
+}
+
+#kendall-icon {
+  background-color: darkgrey;
+}
+
+#alex-icon {
+  background-color: pink;
+}
+
+
